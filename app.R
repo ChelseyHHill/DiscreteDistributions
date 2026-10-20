@@ -15,10 +15,10 @@ parameter_tabs <- tabsetPanel(
   type = "hidden",
   tabPanel("Binomial",
            numericInput("n", "Number of trials (n)", value = 5, min = 1, step = 1),
-           numericInput("pi", "Probability of Event of Interest (Pi) ", min = 0, max = 1, value = 0.3, step = 0.1)
+           numericInput("pi", "Probability of Event of Interest (Pi) ", min = 0, max = 1, value = 0.3, step = 0.05)
   ),
   tabPanel("Poisson", 
-           numericInput("lambda", "Mean (Lambda)", value = 3, step = 1, min = 0),
+           numericInput("lambda", "Mean (Lambda)", value = 3, step = 0.5, min = 0),
   )
 )
 
